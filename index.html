@@ -24,7 +24,7 @@
 		<header class="page-header">
 			<div class="container main-nav">
 				<nav class="main-nav">
-					<a href="./index.html" class="logo link" lang="en">
+					<a href="./index.html" class="logo logo-up link" lang="en">
 						Web
 						<span class="logo-header">Studio</span>
 					</a>
@@ -448,6 +448,20 @@
 						</li>
 					</ul>
 				</div>
+
+				<!-- footer-subscribe -->
+				<div class="footer-subscribe">
+					<b class="subscribe-title">Подпишитесь на рассылку</b>
+					<div class="subscribe-input">
+						<input type="text" />
+						<button class="subscribe-button">
+							Подписаться
+							<svg class="subscribe-icon" width="24" height="24">
+								<use href="./image/sprite-opt.svg#icon-send"></use>
+							</svg>
+						</button></div>
+					
+				</div>
 			</div>
 		</footer>
 
@@ -459,8 +473,28 @@
 						<use href="./image/sprite-opt.svg#icon-close-black"></use>
 					</svg>
 				</button>
+
+				<form class="js-speaker-form">
+					<label for="name">Имя</label>
+					<input type="text" name="name" id="name">
+<br>
+					<label for="tel">Телефон</label>
+					<input type="tel" name="tel" id="tel">
+<br>
+					<label for="mail">Почта</label>
+					<input type="email" name="mail" id="mail">
+
+
+
+
+<br>
+					<button type="submit">Отправить</button>
+					
+				</form>
 			</div>
 		</div>
+
+<script src="./js/submit.js"></script>
 
 		<script src="./js/modal.js"></script>
 	</body>

@@ -69,6 +69,10 @@ img {
 	color: var(--accent-color);
 }
 
+.logo-up {
+	padding: 24px 0;
+}
+
 .logo-header {
 	color: var(--secondary-accent-color);
 }
@@ -441,6 +445,7 @@ img {
 }
 
 /* -------------------------Button styles------------------------- */
+/* -------------Hero button--------------- */
 .hero-buttom {
 	padding: 10px 32px;
 	border-radius: 4px;
@@ -471,6 +476,7 @@ img {
 	transform: translateY(-4px);
 	box-shadow: 0px 10px 20px #d4cbf3;
 }
+/* -------------portfolio button--------------- */
 .filter-nav {
 	display: flex;
 	justify-content: center;
@@ -508,6 +514,46 @@ img {
 	color: var(--primare-bg-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -------------footer-subscribe-button--------------- */
+.subscribe-button {
+	display: flex;
+align-items: center;
+text-align: center;
+margin-left: 12px;
+	padding: 10px 28px 10px 29px ;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	letter-spacing: 0.06em;
+	color: var(--primare-bg-color);
+	background-color: var(--accent-color);
+
+	min-width: 200px;
+	border: transparent;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color var(--time-duration) var(--timing-function),
+		color var(--time-duration) var(--timing-function), box-shadow var(--time-duration) var(--timing-function),
+		transform var(--time-duration) var(--timing-function);
+}
+.subscribe-icon {
+	margin-left: 10px;
+}
+
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+	background-color: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transform: translateY(-3px);
+	/* box-shadow: 0px 10px 20px #d4cbf3; */
 }
 
 /* -------------------------Styles portfolio.html------------------------- */
@@ -599,6 +645,7 @@ img {
 
 .logo-down {
 	margin-bottom: 20px;
+	padding: 0;
 }
 
 .logo-footer {
@@ -682,6 +729,31 @@ img {
 
 	color: var(--primare-bg-color);
 }
+/* -------------------------footer-subscribe-styles------------------------- */
+
+
+	.footer-subscribe {
+		display: flex;
+	margin-left: auto;
+	flex-direction: column;
+	}
+
+	.subscribe-input {
+	display: flex;
+	
+	}
+.subscribe-title {
+	margin-bottom: 20px;
+	font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
 
 /* -------------------------Modal window styles------------------------- */
 .backdrop {
@@ -696,11 +768,11 @@ img {
 	transition: opacity 500ms var(--timing-function), visibility var(--time-duration) var(--timing-function);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-}
+} */
 
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(1.1);
