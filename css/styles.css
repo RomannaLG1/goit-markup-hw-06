@@ -795,7 +795,7 @@ color: #FFFFFF;
 	transition: transform var(--time-duration) var(--timing-function);
 }
 
-.modal-button {
+.modal-btn-close {
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -810,4 +810,8 @@ color: #FFFFFF;
 	border-radius: 50%;
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-comment {
+	resize: none;
 }
