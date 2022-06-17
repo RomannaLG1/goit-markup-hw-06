@@ -516,6 +516,8 @@ img {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+
+
 /* -------------footer-subscribe-button--------------- */
 .subscribe-button {
 	display: flex;
@@ -554,6 +556,44 @@ margin-left: 12px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	transform: translateY(-3px);
 	/* box-shadow: 0px 10px 20px #d4cbf3; */
+}
+
+.upp-button {
+	position: fixed;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	justify-content: center;
+	align-items: center;
+	right: 1.5rem;
+	bottom: 1.2rem;
+	width: 95px;
+	height: 60px;
+	border: transparent;
+	background-color: var(--secondary-bg-color);
+	border-radius: 50%;
+	color: var(--primary-text-color);
+	cursor: pointer;
+	transition: box-shadow var(--time-duration) var(--timing-function),
+		transform 400ms var(--timing-function);
+	
+}
+
+.upp-button[data-visible=true] {
+	opacity: 1;
+	visibility: visible;
+}
+
+.upp-icon {
+	fill: currentColor;
+}
+
+.upp-button:hover,
+.upp-button:focus {
+	background-color: var(--accent-color);
+	color: var(--primare-bg-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	transform: translateY(-4px);
 }
 
 /* -------------------------Styles portfolio.html------------------------- */
@@ -783,7 +823,7 @@ color: #FFFFFF;
 	top: 50%;
 	left: 50%;
 
-	padding: 15px;
+	padding: 40px 39px 40px 41px;
 	min-width: 528px;
 	min-height: 581px;
 
@@ -812,6 +852,37 @@ color: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.form {
+}
+
+.form-title {
+	margin-bottom: 12px;
+	font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title-text-color);
+}
+.form-field {
+	margin-bottom: 10px;
+	
+}
+.form-input {
+	width: 448px;
+height: 40px;
+/* left: 576px;
+top: 314px; */
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
 .modal-comment {
 	resize: none;
+}
+.modal-link {
+}
+.form-btn {
 }
